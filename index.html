@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.validation {
+			margin: 50px 0 0 50px; 
+			line-height: 24px;
+		}
+		.intro {
+			display: inline-block;
+			width: 100px;
+			text-align: right;
+		}
+		.msg {
+			display: inline-block;
+			margin-left: 10px;
+			font-size: 12px;
+		}
+		.notice {
+			margin-left: 100px;
+			height: 20px;
+			font-size: 12px;
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div class="validation">
+			<div><span class="intro">用户名：</span></span><input type="text"><p class="msg"></p></div>
+			<div class="notice" id="count"></div>
+			<div><span class="intro">密  码：</span><input type="password"><p class="msg"></p></div>
+			<div class="notice" id="pwd">弱</div>
+			<div><span class="intro">确认密码：</span><input type="password" disabled><p class="msg"></p></div>
+			<div class="notice" id="pwd2"></div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
